@@ -1,0 +1,66 @@
+{
+  "name": "extension-collection-pack-da-rafa",
+  "displayName": "Extension Collection Pack da Rafa",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "icon": "./9414296.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rafaela/extension-collection-pack-da-rafa.git"
+  },
+  "categories": [
+    "Extension Packs"
+  ],
+  "extensionPack": [
+    "daltonmenezes.aura-theme",
+		"formulahendry.auto-close-tag",
+		"formulahendry.auto-rename-tag",
+		"steoates.autoimport",
+		"codeium.codeium",
+		"naumovs.color-highlight",
+		"editorconfig.editorconfig",
+		"dbaeumer.vscode-eslint",
+		"eamodio.gitlens",
+		"cristian-kohler.path-intellisense",
+		"esbenp.prettier-vscode",
+		"humao.rest-client",
+		"simonsiefke.svg-preview",
+		"miguelsolorio.symbols",
+		"miguelsolorio.fluent-icons",
+		"bradlc.vscode-tailwindcss",
+		"styled-components.vscode-styled-components",
+		"wakatime.vscode-wakatime"
+  ],
+  "activationEvents": [],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension-collection-pack-da-rafa.helloWorld",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src --ext ts",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/vscode": "^1.86.0",
+    "@types/mocha": "^10.0.6",
+    "@types/node": "18.x",
+    "@typescript-eslint/eslint-plugin": "^6.19.1",
+    "@typescript-eslint/parser": "^6.19.1",
+    "eslint": "^8.56.0",
+    "typescript": "^5.3.3",
+    "@vscode/test-cli": "^0.0.4",
+    "@vscode/test-electron": "^2.3.9"
+  }
+}
